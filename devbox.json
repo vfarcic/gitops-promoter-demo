@@ -4,7 +4,12 @@
     "kubectl@1.32.2",
     "kind@0.27.0",
     "nushell@0.102.0",
-    "git@2.48.1"
+    "git@2.48.1",
+    "teller@2.0.7",
+    "path:gcloud#google-cloud-sdk",
+    "awscli2@2.23.11",
+    "eksctl@0.203.0",
+    "azure-cli@2.69.0"
   ],
   "shell": {
     "init_hook": [],

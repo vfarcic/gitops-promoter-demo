@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: promoter-webhook-receiver
+spec:
+  ingressClassName: contour
+  rules:
+  - host: promoter-webhook-receiver.35.231.157.181.nip.io
+    http:
+      paths:
+      - path: /
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: promoter-webhook-receiver
+            port:
+              number: 3333
